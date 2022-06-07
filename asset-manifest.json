@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/free-lunch-web/static/js/main.fcdb7393.js",
+    "main.js": "/free-lunch-web/static/js/main.dd55ba95.js",
     "static/js/787.ffad560e.chunk.js": "/free-lunch-web/static/js/787.ffad560e.chunk.js",
     "index.html": "/free-lunch-web/index.html",
-    "main.fcdb7393.js.map": "/free-lunch-web/static/js/main.fcdb7393.js.map",
+    "main.dd55ba95.js.map": "/free-lunch-web/static/js/main.dd55ba95.js.map",
     "787.ffad560e.chunk.js.map": "/free-lunch-web/static/js/787.ffad560e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fcdb7393.js"
+    "static/js/main.dd55ba95.js"
   ]
 }
