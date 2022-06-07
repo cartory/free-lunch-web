@@ -25,8 +25,10 @@ by default is with `mysql`
 
 ### Download source code
 
-```bash
-git clone https://github.com/cartory/antique_bidding_app.git
+```bas
+git https://github.com/cartory/free-lunch-web
+git https://github.com/cartory/free-lunch-web
+git https://github.com/cartory/free-lunch-web
 ```
 
 ### Install Dependencies
@@ -37,8 +39,6 @@ npm install
 
 ### Run Project
 
-The project runs by default on port 3000
-
 ```bash
 npm start
 ```
@@ -46,8 +46,6 @@ npm start
 ## Tabs
 
 ### Free Food Tab
-
-build with `firebase` Auth and `sessionStorage`
 
 ![freeFoodTab](https://media.discordapp.net/attachments/810375634042748948/983775997876895754/Screen_Shot_2022-06-07_at_12.54.22.png?width=961&height=625)
 
