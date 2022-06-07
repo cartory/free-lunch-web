@@ -25,10 +25,28 @@ by default is with `mysql`
 
 ### Download source code
 
-```bas
-git https://github.com/cartory/free-lunch-web
-git https://github.com/cartory/free-lunch-web
-git https://github.com/cartory/free-lunch-web
+#### ms-web-app
+
+```bash
+git clone https://github.com/cartory/free-lunch-web
+```
+
+#### ms-restaurant
+
+```bash
+git clone https://github.com/cartory/ms-restaurant.git
+```
+
+#### ms-kitchen
+
+```bash
+git clone https://github.com/cartory/ms-kitchen.git
+```
+
+#### ms-warehouse
+
+```bash
+git clone https://github.com/cartory/ms-warehouse.git
 ```
 
 ### Install Dependencies
