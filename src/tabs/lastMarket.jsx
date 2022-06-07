@@ -45,28 +45,42 @@ export const LastMarketTable = () => {
 							<strong>TimeStamp</strong>
 						</TableCell>
 						<TableCell align="center">
-							<strong>Ingredient</strong>
+							<strong>Stock</strong>
 						</TableCell>
 						<TableCell align="center">
-							<strong>Count</strong>
+							<strong>Minimum Stock</strong>
+						</TableCell>
+						<TableCell align="center">
+							<strong>Ingredient</strong>
 						</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
 					{rows.map((row, index) => {
+						const { ingredient } = row
+
 						return (
 							<TableRow key={index} align="center" sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
-								<TableCell component="th" scope="row">
-									ID
+								<TableCell align="center" component="th" scope="row">
+									{row.id}
 								</TableCell>
-								<TableCell component="th" scope="row">
-									TIME
+								<TableCell align="center" component="th" scope="row">
+									{row.createdAt}
 								</TableCell>
-								<TableCell component="th" scope="row">
-									Ingredient
+								<TableCell align="center" component="th" scope="row">
+									{ingredient.stock}
 								</TableCell>
-								<TableCell component="th" scope="row">
-									Count
+								<TableCell align="center" component="th" scope="row">
+									{ingredient.minimumStock}
+								</TableCell>
+								<TableCell
+									//
+									align="center"
+									component="th"
+									scope="row"
+									style={{ backgroundImage: `url(${ingredient.imageUrl})`, backgroundSize: "contain", backgroundRepeat: "no-repeat" }}
+								>
+									{ingredient.name}
 								</TableCell>
 							</TableRow>
 						)

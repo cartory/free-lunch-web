@@ -40,11 +40,11 @@ export default function App() {
         <Recipes />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <h3>Last recipes</h3>
+        <h3>Last 15 Recipes</h3>
         <LastRecipesTable />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <h3>Last Ingredients</h3>
+        <h3>Last 15 Ingredients</h3>
         <LastMarketTable />
       </TabPanel>
     </Box>

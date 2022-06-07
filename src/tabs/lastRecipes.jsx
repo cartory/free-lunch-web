@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import {
 	//
@@ -52,16 +52,17 @@ export const LastRecipesTable = () => {
 				</TableHead>
 				<TableBody>
 					{rows.map((row, index) => {
+						const { recipe } = row
 						return (
 							<TableRow key={index} align="center" sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
-								<TableCell component="th" scope="row">
-									ID
+								<TableCell align="center" component="th" scope="row">
+									{row.id}
 								</TableCell>
-								<TableCell component="th" scope="row">
-									TIME
+								<TableCell align="center" component="th" scope="row">
+									{row.createdAt}
 								</TableCell>
-								<TableCell component="th" scope="row">
-									FOOD
+								<TableCell scope="row" align="center" component="th" style={{ backgroundImage: `url(${recipe.imageUrl})`, backgroundSize: "contain", backgroundRepeat: "no-repeat" }}>
+									{recipe.name}
 								</TableCell>
 							</TableRow>
 						)
