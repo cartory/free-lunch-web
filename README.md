@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Free Lunch App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Free Lunch App, build with `javascript` `react`. You can see the backend-microservices side [here](https://github.com/cartory/antique-bidding-back.git)
 
-## Available Scripts
+## Entity Relationship Diagram
 
-In the project directory, you can run:
+Made with `mysql` and `sequelize` for all microservices
 
-### `npm start`
+![EDR-VPP](https://cdn.discordapp.com/attachments/810375634042748948/983735286141960292/Screen_Shot_2022-06-07_at_10.12.38.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## State Machine Diagram
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+useful for understanding how food-request works
 
-### `npm test`
+![STM-VPP](https://media.discordapp.net/attachments/810375634042748948/983737358199443536/Screen_Shot_2022-06-07_at_10.20.48.png?width=424&height=624)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment Diagram
 
-### `npm run build`
+![DPM-VPP](https://media.discordapp.net/attachments/810375634042748948/983747311257649242/Screen_Shot_2022-06-07_at_11.00.29.png?width=958&height=625)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For running backend you to create a `.env` file for enviroments variables and set your DB
+by default is with `mysql`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Download source code
 
-### `npm run eject`
+```bash
+git clone https://github.com/cartory/antique_bidding_app.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project runs by default on port 3000
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tabs
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Free Food Tab
 
-### Code Splitting
+build with `firebase` Auth and `sessionStorage`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![freeFoodTab](https://media.discordapp.net/attachments/810375634042748948/983775997876895754/Screen_Shot_2022-06-07_at_12.54.22.png?width=961&height=625)
 
-### Analyzing the Bundle Size
+### Recipe History Tab
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+build with `query` params and `debouncer` for slider filter for fetching from backend
+![recipeHistoryTab](https://media.discordapp.net/attachments/810375634042748948/907370887207075840/Screen_Shot_2021-11-08_at_16.47.49.png?width=1663&height=1047)
 
-### Making a Progressive Web App
+### See Ingredients Tab
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+build with `socket.io-client` for listening changes
+![DetailPage](https://cdn.discordapp.com/attachments/810375634042748948/907371512674271282/Screen_Shot_2021-11-08_at_16.50.15.png)
 
-### Advanced Configuration
+### Ingredients History Tab
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+build with maximumBidAmount with `One-to-One` relationship with user
+![SettingsPage](https://cdn.discordapp.com/attachments/810375634042748948/907371984973885440/Screen_Shot_2021-11-08_at_16.52.14.png)
 
-### Deployment
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   **cartory** - _Pedro Caricari_ - [cartory](https://github.com/cartory)
