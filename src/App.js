@@ -5,6 +5,7 @@ import { LastMarketTable } from "./tabs/lastMarket"
 import { LastRecipesTable } from "./tabs/lastRecipes"
 
 import Recipes from "./tabs/requestRecipe"
+import { IngredientsList } from "./tabs/ingredientsList"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
@@ -33,6 +34,7 @@ export default function App() {
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Free Food" />
           <Tab label="Recipe History" />
+          <Tab label="See Ingredients" />
           <Tab label="Ingredients History" />
         </Tabs>
       </Box>
@@ -44,6 +46,9 @@ export default function App() {
         <LastRecipesTable />
       </TabPanel>
       <TabPanel value={value} index={2}>
+        <IngredientsList />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
         <h3>Last 15 Ingredients</h3>
         <LastMarketTable />
       </TabPanel>
