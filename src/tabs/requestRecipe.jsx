@@ -96,7 +96,23 @@ export default function RequestRecipe() {
 									title={name}
 									subtitle={`ingredients : ${ingredients.length}`}
 									actionIcon={
-										<IconButton sx={{ color: "rgba(255, 255, 255, 0.54)" }} aria-label={`info about ${name}`}>
+										<IconButton
+											sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+											aria-label={`info about ${name}`}
+											onClick={() => {
+												const ingredients = recipe.ingredients.map(({ name, RecipeIngredient }) => {
+													return { name, count: RecipeIngredient.count }
+												})
+
+												alert(
+													`recipe ${recipe.name.toUpperCase()}\n${ingredients
+														.map((i) => {
+															return `${i.name.toUpperCase()} ${i.count}`
+														})
+														.join("\n")}`
+												)
+											}}
+										>
 											<InfoIcon />
 										</IconButton>
 									}
