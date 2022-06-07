@@ -58,7 +58,7 @@ npm install
 ### Run Project
 
 ```bash
-npm start
+npm run start:dev
 ```
 
 ## Tabs
@@ -69,18 +69,15 @@ npm start
 
 ### Recipe History Tab
 
-build with `query` params and `debouncer` for slider filter for fetching from backend
-![recipeHistoryTab](https://media.discordapp.net/attachments/810375634042748948/907370887207075840/Screen_Shot_2021-11-08_at_16.47.49.png?width=1663&height=1047)
+![recipeHistoryTab](https://media.discordapp.net/attachments/810375634042748948/983778791857979392/Screen_Shot_2022-06-07_at_13.05.29.png?width=961&height=625)
 
 ### See Ingredients Tab
 
-build with `socket.io-client` for listening changes
-![DetailPage](https://cdn.discordapp.com/attachments/810375634042748948/907371512674271282/Screen_Shot_2021-11-08_at_16.50.15.png)
+![ingredientsTab](https://media.discordapp.net/attachments/810375634042748948/983779081034301480/Screen_Shot_2022-06-07_at_13.06.42.png?width=961&height=625)
 
 ### Ingredients History Tab
 
-build with maximumBidAmount with `One-to-One` relationship with user
-![SettingsPage](https://cdn.discordapp.com/attachments/810375634042748948/907371984973885440/Screen_Shot_2021-11-08_at_16.52.14.png)
+![marketHistoryTab](https://cdn.discordapp.com/attachments/810375634042748948/983779143491665991/Screen_Shot_2022-06-07_at_13.06.56.png)
 
 ## Author
 
